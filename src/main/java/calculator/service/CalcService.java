@@ -11,11 +11,6 @@ public class CalcService implements CalcInterface{
 
   private final List<Operations> content = new LinkedList<>();
 
-  public CalcService() {
-    content.add(new Operations("1", "2", "plus", "3"));
-    content.add(new Operations("6", "4", "minus", "10"));
-  }
-
   @Override
   public List<Operations> get(){
     return content;

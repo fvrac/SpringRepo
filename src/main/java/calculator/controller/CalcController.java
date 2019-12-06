@@ -68,4 +68,9 @@ public class CalcController{
     return calcService.get();
   }
 
+  @GetMapping("/history")
+  public List<Operations> get_all_users() {
+    return calcService.get();
+  }
+
 }
